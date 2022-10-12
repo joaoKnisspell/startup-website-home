@@ -1,0 +1,111 @@
+.principal{
+    padding: 0 1.5em 3em 1.5em;
+    color: var(--branco);
+}
+
+.primeiro__texto{
+    margin:1.5em 0 1.2em 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing: 0.3em;
+}
+
+.texto__principal{
+    font-size: 28px;
+    font-weight:700;
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+}
+
+.principal__descricao{
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2em;
+    margin-bottom: 2.2em;
+    max-width:95% ;
+}
+
+.principal__botao{
+    text-decoration: none;
+    color: black;
+    background-color: var(--branco);
+    padding: 0.5em 2.2em;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:700px){
+    .principal{
+        padding: 0 0em 3em 0em;
+        color: var(--branco);
+    }
+
+    .principal__container{
+        margin: 0 5%;
+        text-align: center;
+    }
+
+    .principal__imagem{
+        width: 500px;
+    }
+
+    .principal__descricao{
+        color: rgba(255, 255, 255, 0.75);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.2em;
+        margin:0 auto 2.2em auto;
+        max-width:60% ;
+    }
+}
+
+
+@media screen and (min-width:1440px){
+    .principal__container{
+        margin: 0 10%;
+        display: grid;
+        grid-template-areas: 
+            "texto imagem"
+        ;
+        align-items: center;
+        grid-column-gap: 5em;
+        padding: 0.5em 0 2em 0;
+        text-align: left;
+    }
+
+    .principal__texto{
+        grid-area:texto;
+    }
+
+    .primeiro__texto{
+        margin:1.5em 0 1.5em 0;
+    }
+
+    .principal__imagem{
+        grid-area:imagem;
+        width: 650px;
+    }
+
+    .texto__principal{
+        line-height: 1.5em;
+    }
+
+    .principal__descricao{
+        margin:0 0 2.5em 0;
+        line-height: 1.5em;
+        max-width:95% ;
+    }
+
+    .primeiro__texto{
+        margin:0 0 1em 0;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight:700;
+        letter-spacing: 0.3em;
+    }
+    
+}

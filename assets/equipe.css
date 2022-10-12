@@ -1,0 +1,99 @@
+:root{
+    --fonte-pricipal: 'Work Sans', sans-serif;
+    --fonte-secundaria: 'Crimson Text', serif;
+    --verde:#74C69D;
+    --branco:#ffffff;
+}
+
+body{
+    font-family: var(--fonte-pricipal);
+}
+
+
+.equipe{
+    text-align: center;
+    padding: 4.5em 1.5em;
+}
+
+.equipe__cards{
+    margin: 2em auto;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px; 
+    width: 279px;
+    height: 299px;
+}
+
+.cards-content{
+    padding: 1.5em 2em;
+}
+
+.equipe__cards-text{
+    text-align: left;   
+}
+
+.card__name{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0.8em 0;
+}
+
+.card__job{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.equipe__botao{
+    margin-top: 3em;
+}
+
+@media screen and (min-width:700px){
+    .equipe{
+        margin: 0 5%;
+    }
+
+    .cards-flex{
+        display: flex;
+        margin-top: 1.5em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .equipe__cards{
+        margin: 1em 1em ;
+        width: 279px;
+        height: 299px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .equipe{
+        margin: 0 10%;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .equipe{
+        margin: 0 6%;
+    }
+
+    .equipe__cards{
+        margin: 2em auto;
+        width: 279px;
+        height: 299px;
+    }
+
+    .cards-flex{
+        display: flex;
+        margin-top: 2em;
+    }
+
+}
+
+@media screen and (min-width:1700px){
+.equipe__cards{
+    margin: 2em 2em;
+    width: 279px;
+    height: 299px;
+}
+}

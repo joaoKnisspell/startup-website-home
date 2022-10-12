@@ -1,0 +1,19 @@
+@import url(/assets/reset.css);
+@import url(/assets/header.css);
+@import url(/assets/main.css);
+@import url(/assets/parceiros.css);
+@import url(/assets/card.css);
+@import url(/assets/equipe.css);
+@import url(/assets/rodape.css);
+
+:root{
+    --fonte-pricipal: 'Work Sans', sans-serif;
+    --fonte-secundaria: 'Crimson Text', serif;
+    --verde:#74C69D;
+    --branco:#ffffff;
+}
+
+body{
+    font-family: var(--fonte-pricipal);
+}
+

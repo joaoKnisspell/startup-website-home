@@ -1,0 +1,40 @@
+
+.rodape{
+    padding: 2em 1.5em;
+    background-color: var(--verde);
+    text-align: center;
+}
+
+.rodape__lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__lista-item{
+    margin:0 0.6em;
+}
+
+.rodape__direitos{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 0.8em;
+}
+
+@media screen and (min-width:1440px){
+    .rodape{
+        padding: 4em 0;
+    }
+
+    .rodape__content{
+        margin: 0 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rodape__direitos{
+        margin-top: 0;
+    }
+
+}
